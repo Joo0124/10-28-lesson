@@ -12,7 +12,16 @@
    <div class="container">
       <?php
       if(isset($_GET['error'])) {
-         echo $_GET['error'];
+          if($_GET['error'] == 'confirmation') {
+      ?>
+
+         <div class="alert alert-danger" role="alert">
+            Password aldaa!
+         </div>
+
+
+      <?php     
+          }
       }
       ?>
       <form action="registration.php" method="POST">
